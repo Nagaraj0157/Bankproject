@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <center>
+    <h1 style='color:red'>Register Form</h1>
+      <form method='POST'>
+        {% csrf_token %}
+        {{r.as_p}}
+        <input type="submit" value="submit">
+      </form>
+    </center>
+  </body>
+</html>
